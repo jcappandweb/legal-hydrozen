@@ -18,6 +18,7 @@ When you consent to personalized ads, AdMob may collect :
 This app requests access to the following Health Connect data types :
 - Hydration
 - Weight
+- ExerciseSession
 
 This data is :
 - Read and/or written locally on your device via Health Connect
