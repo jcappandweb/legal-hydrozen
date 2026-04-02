@@ -92,4 +92,4 @@ Continued use of the app after changes constitutes acceptance.
 
 ## 11. Contact
 For any privacy-related questions :
-jcappandweb@gmail.com
+contact@hydrozen.app
