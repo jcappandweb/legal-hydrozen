@@ -1,9 +1,9 @@
 # Privacy Policy
 
-**Last updated : March 2026**
+**Last updated : Avril 2026**
 
 ## 1. Introduction
-This privacy policy describes how H2O Flow collects, uses and protects your personal data.
+This privacy policy describes how HydroZen collects, uses and protects your personal data.
 
 ## 2. Data collected
 
