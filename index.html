@@ -286,9 +286,9 @@
         }
         .footer-logo { display: flex; align-items: center; gap: 0.5rem; }
         .footer-logo span { font-family: 'Playfair Display', serif; color: white; font-size: 1.1rem; }
-        footer nav { display: flex; gap: 1.5rem; }
-        footer nav a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
-        footer nav a:hover { color: white; }
+        footer .footer-links { display: flex; gap: 1.5rem; }
+        footer .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+        footer .footer-links a:hover { color: white; }
 
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(24px); }
@@ -486,11 +486,11 @@
         </svg>
         <span>HydroZen</span>
     </div>
-    <nav>
+    <div class="footer-links">
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="mailto:contact@hydrozen.app">Contact</a>
         <a href="https://play.google.com/store/apps/details?id=com.jcappandweb.hydrozen">Google Play</a>
-    </nav>
+    </div>
     <p style="color: rgba(255,255,255,0.4); font-size: 0.75rem; margin-top: 0.8rem; width: 100%; text-align: center;">© 2026 JC App &amp; Web. All rights reserved.</p>
 </footer>
 
