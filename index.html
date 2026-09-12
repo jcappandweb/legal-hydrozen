@@ -352,9 +352,10 @@
   </style>
   <script>
     // Auto-redirect to FR if browser language is French
+    // UPDATED: now preserves the query string (UTM params) across the redirect
     if (navigator.language && navigator.language.startsWith('fr') && !sessionStorage.getItem('lang-chosen')) {
       sessionStorage.setItem('lang-chosen', 'fr');
-      window.location.href = '/fr/';
+      window.location.href = '/fr/' + window.location.search;
     }
   </script>
 </head>
@@ -584,6 +585,32 @@
   </div>
   <p style="color: rgba(255,255,255,0.4); font-size: 0.75rem; margin-top: 0.8rem; width: 100%; text-align: center;">© 2026 JC App &amp; Web. All rights reserved.</p>
 </footer>
+
+<script>
+  // UTM passthrough: reads UTM params from this page's URL and appends them
+  // to every Play Store link on the page, so Firebase Analytics can attribute
+  // the eventual install to the right source (reddit, instagram, etc.)
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    var hasUtm = utmKeys.some(function (k) { return params.has(k); });
+
+    if (!hasUtm) return;
+
+    document.querySelectorAll('a[href*="play.google.com"]').forEach(function (link) {
+      try {
+        var url = new URL(link.href);
+        utmKeys.forEach(function (k) {
+          var v = params.get(k);
+          if (v) url.searchParams.set(k, v);
+        });
+        link.href = url.toString();
+      } catch (e) {
+        // Ignore malformed hrefs, don't break the page
+      }
+    });
+  })();
+</script>
 
 </body>
 </html>
