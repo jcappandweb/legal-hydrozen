@@ -14,6 +14,17 @@ When you consent to personalized ads, AdMob may collect :
 - Device information (model, OS version)
 - App usage data and interactions
 
+### Analytics (Firebase Analytics / Google Analytics for Firebase)
+To understand which acquisition channels bring users to HydroZen and how the app is
+used, we collect analytics events when you consent :
+- App install source and campaign attribution (UTM parameters from Play Store links)
+- Automatic events : first open, session start, screen views, user engagement
+- Custom events : app share initiated, in-app review flow requested/completed
+- Device model, OS version, app version, locale, and a technical Firebase install identifier
+
+No health data, precise location, or personal identifiers are ever included in these events.
+Collection is gated on your consent choice in the GDPR message.
+
 ### Crash diagnostics (Firebase Crashlytics)
 To keep the app stable, we collect anonymous crash reports containing :
 - Stack trace and cause of the crash
@@ -48,6 +59,7 @@ This data is :
 | Data                | Purpose                        | Legal basis                                              |
 |---------------------|--------------------------------|----------------------------------------------------------|
 | AdMob data          | Display ads                    | Consent (GDPR Art. 6.1.a)                                |
+| Analytics events    | Measure acquisition and usage  | Consent (GDPR Art. 6.1.a)                                |
 | Crash diagnostics   | Detect and fix app crashes     | Legitimate interest (GDPR Art. 6.1.f)                    |
 | Weather location    | Adjust daily hydration goal    | Consent, given by enabling the feature (GDPR Art. 6.1.a) |
 | Health Connect data | Core app functionality         | Consent (GDPR Art. 9.2.a)                                |
@@ -66,6 +78,16 @@ In compliance with Google Play's Health Connect policy, we confirm that :
 Used to display ads in the app.
 - Privacy policy : https://policies.google.com/privacy
 - Opt-out : https://adssettings.google.com
+
+### Firebase Analytics / Google Analytics for Firebase (Google)
+Used to measure acquisition (which channels bring installs) and aggregate usage.
+Collection is denied by default and only activated once you grant consent through
+the GDPR message. Data collected is limited to install source, session/screen events,
+and a technical install identifier; no health, location, or personal data is included.
+
+You can withdraw consent at any time from **Profile → Manage Consent**.
+
+- Privacy policy : https://firebase.google.com/support/privacy
 
 ### Firebase Crashlytics (Google)
 Used to detect and diagnose app crashes so we can fix them.
