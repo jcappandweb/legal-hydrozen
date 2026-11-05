@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HydroZen – Terms of Service</title>
+  <style>
+    /* ── HydroZen design tokens ───────────────────────────── */
+    :root {
+      --primary:        #0061A4;   /* Blue40  */
+      --primary-light:  #D1E4FF;   /* BlueContainer40 */
+      --primary-dark:   #001D36;   /* OnBlueContainer40 */
+      --secondary:      #535F70;   /* BlueGrey40 */
+      --bg:             #FFFFFF;
+      --surface:        #F4F6FA;
+      --text:           #1A1A1A;
+      --text-muted:     #535F70;
+      --border:         #D7E3F7;   /* BlueGreyContainer40 */
+      --notice-bg:      #E8F1FF;
+      --notice-border:  #0061A4;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary:        #9ECAFF;  /* Blue80  */
+        --primary-light:  #00497D;  /* BlueContainer80 */
+        --primary-dark:   #D1E4FF;
+        --secondary:      #BBC7DB;  /* BlueGrey80 */
+        --bg:             #0D1117;
+        --surface:        #161B22;
+        --text:           #E6EDF3;
+        --text-muted:     #8B949E;
+        --border:         #3B4858;  /* BlueGreyContainer80 */
+        --notice-bg:      #001D36;
+        --notice-border:  #9ECAFF;
+      }
+    }
+
+    /* ── Reset & base ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ───────────────────────────────────────────── */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo svg { width: 28px; height: 28px; fill: var(--primary); }
+
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.15rem;
+    }
+
+    header p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Sections ─────────────────────────────────────────── */
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1em;
+      background: var(--primary);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 0.9rem; }
+
+    ul { margin: 0.5rem 0 0.9rem 1.5rem; }
+    ul li { margin-bottom: 0.4rem; }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Health notice card ───────────────────────────────── */
+    .notice {
+      background: var(--notice-bg);
+      border-left: 4px solid var(--notice-border);
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    /* ── Footer ───────────────────────────────────────────── */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo" aria-hidden="true">
+        <!-- water drop -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C12 2 5 10.5 5 15a7 7 0 0 0 14 0C19 10.5 12 2 12 2Z"/>
+        </svg>
+      </div>
+      <div>
+        <h1>HydroZen – Terms of Service</h1>
+        <p>Effective date: November 5, 2026 &nbsp;·&nbsp; Last updated: November 5, 2026</p>
+      </div>
+    </header>
+
+    <!-- 1 -->
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By downloading, installing, or using the HydroZen application (the "App"), you agree to be
+      bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use
+      the App.
+    </p>
+    <p>
+      These Terms apply to all versions of HydroZen available on Google Play and constitute a
+      legally binding agreement between you and the developer, JCAPPANDWEB SARL ("we", "us", or
+      "our").
+    </p>
+
+    <!-- 2 -->
+    <h2>2. Description of the Service</h2>
+    <p>
+      HydroZen is a personal hydration tracking application for Android. Its core features include:
+    </p>
+    <ul>
+      <li>Logging daily water and beverage intake</li>
+      <li>Personalized daily hydration goal calculation based on your profile, activity level, and local weather conditions</li>
+      <li>Scheduled drink reminders and notifications</li>
+      <li>Hydration insights and history charts</li>
+      <li>Home-screen widget for quick logging</li>
+      <li>Optional synchronization with Android Health Connect</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2>3. Data We Collect and How We Use It</h2>
+
+    <p><strong>3.1 Health &amp; Activity Data (Health Connect)</strong></p>
+    <p>
+      With your explicit permission, HydroZen reads and writes the following data types through the
+      Android Health Connect API:
+    </p>
+    <ul>
+      <li>Hydration records (read &amp; write)</li>
+      <li>Body weight (read)</li>
+      <li>Exercise sessions (read)</li>
+      <li>Step count (read)</li>
+      <li>Sleep sessions (read)</li>
+    </ul>
+    <p>
+      This data is used solely to compute your adaptive daily hydration goal and to populate the
+      Insights screen. It is processed on-device and is never uploaded to our servers.
+    </p>
+
+    <p><strong>3.2 Location &amp; Weather</strong></p>
+    <p>
+      With your permission, HydroZen accesses your approximate device location to retrieve current
+      weather conditions from the Norwegian Meteorological Institute
+      (<a href="https://api.met.no" target="_blank" rel="noopener">api.met.no</a>). Weather data is
+      used exclusively to adjust your daily hydration goal (e.g. higher goals on hot days). Your
+      precise location coordinates are not stored or shared beyond the weather API request.
+    </p>
+
+    <p><strong>3.3 Preferences &amp; Logs</strong></p>
+    <p>
+      Your profile settings, hydration logs, reminder schedules, and daily goals are stored locally
+      on your device using Android DataStore and Room. We do not host a backend server and do not
+      have access to this data.
+    </p>
+
+    <p><strong>3.4 Analytics &amp; Crash Reporting</strong></p>
+    <p>
+      HydroZen uses Firebase Analytics and Firebase Crashlytics (provided by Google) to collect
+      anonymous usage statistics and crash reports. This helps us identify bugs and improve the App.
+      No personally identifiable information is included in these reports. For more information,
+      see Google's Privacy Policy at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+    </p>
+
+    <!-- 4 -->
+    <h2>4. Health Disclaimer</h2>
+    <div class="notice">
+      HydroZen is a general wellness tool, <strong>not a medical device or medical service</strong>.
+      The hydration goals, suggestions, and information provided by the App are for informational
+      purposes only and do not constitute medical advice, diagnosis, or treatment. Always consult a
+      qualified healthcare professional before making any changes to your diet, exercise, or fluid
+      intake, especially if you have a medical condition.
+    </div>
+
+    <!-- 5 -->
+    <h2>5. Premium Subscriptions &amp; In-App Purchases</h2>
+    <p>
+      HydroZen offers a one-time purchase ("HydroZen Premium") that permanently unlocks additional
+      features. The purchase is processed exclusively through the Google Play billing system and is
+      subject to Google Play's Terms of Service and refund policy.
+    </p>
+    <ul>
+      <li>The fee is a single, non-recurring charge applied to your Google Play account upon confirmation of purchase.</li>
+      <li>Premium access is tied to your Google Play account and can be restored on any device via the "Restore Purchase" option in the app.</li>
+      <li>Refund requests must be submitted through Google Play. We do not process refunds directly.</li>
+    </ul>
+    <p>HydroZen Premium unlocks the following features:</p>
+    <ul>
+      <li><strong>Smart Adaptive Goal</strong> — hydration goal automatically adjusted via Health Connect, weather, and activity data</li>
+      <li><strong>Advanced Analytics</strong> — detailed weekly and monthly hydration trends</li>
+      <li><strong>Custom Presets</strong> — personalized quick-add water volumes</li>
+      <li><strong>Custom Sounds</strong> — Ocean, Rain, and Water Drop reminder alerts</li>
+      <li><strong>OLED Dark Mode</strong> — true black theme for battery saving on OLED screens</li>
+      <li><strong>No Advertisements</strong> — completely ad-free experience</li>
+      <li><strong>Hydration Lab</strong> — science-backed experiments to discover what works best for you</li>
+      <li><strong>Smart Reminders</strong> — reminders auto-scheduled based on your daily routine</li>
+    </ul>
+
+    <!-- 6 -->
+    <h2>6. Advertising</h2>
+    <p>
+      The free version of HydroZen displays advertisements served by Google AdMob. An interstitial
+      ad may be shown when you reach your daily hydration goal, subject to a daily cap of one ad
+      per day and a minimum cooldown between displays. Users in regions subject to the GDPR or
+      similar privacy regulations will be presented with a consent prompt before any personalized
+      advertising is shown. You may withdraw consent at any time in the App's settings.
+    </p>
+
+    <!-- 7 -->
+    <h2>7. Third-Party Services</h2>
+    <p>HydroZen integrates with the following third-party services. Their respective terms and privacy policies apply to data processed through them:</p>
+    <ul>
+      <li><strong>Google Play Billing</strong> – in-app purchase processing</li>
+      <li><strong>Google AdMob</strong> – advertisement delivery</li>
+      <li><strong>Firebase Analytics &amp; Crashlytics</strong> – analytics and crash reporting</li>
+      <li><strong>Android Health Connect</strong> – health data exchange</li>
+      <li><strong>Norwegian Meteorological Institute (MET Norway)</strong> – weather data (<a href="https://api.met.no/weatherapi/locationforecast/2.0/api" target="_blank" rel="noopener">api.met.no</a>)</li>
+    </ul>
+    <p>We are not responsible for the content, privacy practices, or terms of any third-party service.</p>
+
+    <!-- 8 -->
+    <h2>8. Permissions</h2>
+    <p>HydroZen may request the following Android permissions:</p>
+    <ul>
+      <li><strong>Notifications</strong> – to send drink reminders</li>
+      <li><strong>Exact Alarms</strong> – to schedule reminders at precise times</li>
+      <li><strong>Fine / Coarse Location</strong> – to retrieve local weather conditions</li>
+      <li><strong>Health Connect</strong> – to read and write health data (hydration, weight, activity, sleep)</li>
+    </ul>
+    <p>All permissions are requested at runtime. You can revoke them at any time in your device settings; however, some features may become unavailable.</p>
+
+    <!-- 9 -->
+    <h2>9. Intellectual Property</h2>
+    <p>
+      All content, design, code, graphics, and trademarks in HydroZen are the exclusive property of
+      JCAPPANDWEB SARL unless otherwise stated. You are granted a limited, non-exclusive,
+      non-transferable licence to use the App for personal, non-commercial purposes. You may not:
+    </p>
+    <ul>
+      <li>Copy, modify, or distribute the App or its content</li>
+      <li>Reverse engineer or decompile the App</li>
+      <li>Use any part of HydroZen to build a competing product</li>
+    </ul>
+
+    <!-- 10 -->
+    <h2>10. Prohibited Uses</h2>
+    <p>You agree not to use HydroZen to:</p>
+    <ul>
+      <li>Violate any applicable law or regulation</li>
+      <li>Interfere with or disrupt the App or related infrastructure</li>
+      <li>Attempt to gain unauthorised access to any part of the App</li>
+      <li>Transmit any malicious code, virus, or harmful data</li>
+    </ul>
+
+    <!-- 11 -->
+    <h2>11. Disclaimer of Warranties</h2>
+    <p>
+      The App is provided "as is" and "as available" without warranties of any kind, express or
+      implied, including but not limited to warranties of merchantability, fitness for a particular
+      purpose, or non-infringement. We do not warrant that the App will be error-free, uninterrupted,
+      or free of harmful components.
+    </p>
+
+    <!-- 12 -->
+    <h2>12. Limitation of Liability</h2>
+    <p>
+      To the maximum extent permitted by applicable law, JCAPPANDWEB SARL shall not be liable for any
+      indirect, incidental, special, consequential, or punitive damages arising from your use of or
+      inability to use the App, including but not limited to loss of data, health outcomes, or
+      loss of profits, even if we have been advised of the possibility of such damages.
+    </p>
+
+    <!-- 13 -->
+    <h2>13. Changes to These Terms</h2>
+    <p>
+      We reserve the right to update these Terms at any time. When we do, we will update the
+      "Last updated" date at the top of this page. Continued use of the App after changes are posted
+      constitutes your acceptance of the revised Terms. We encourage you to review this page
+      periodically.
+    </p>
+
+    <!-- 14 -->
+    <h2>14. Governing Law</h2>
+    <p>
+      These Terms are governed by and construed in accordance with the laws of France, without
+      regard to its conflict-of-law provisions. Any disputes arising under these Terms shall be
+      subject to the exclusive jurisdiction of the competent courts of France.
+    </p>
+
+    <!-- 15 -->
+    <h2>15. Contact</h2>
+    <p>If you have any questions about these Terms, please contact us at:</p>
+    <ul>
+      <li>Email: <a href="mailto:contact@hydrozen.app">contact@hydrozen.app</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2026 JCAPPANDWEB SARL – HydroZen. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
